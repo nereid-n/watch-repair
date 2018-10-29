@@ -1,0 +1,20 @@
+extends ../components/layout-default/layout-default
+include ../components/header/header
+include ../components/masters/masters
+include ../components/use/use
+include ../components/steps/steps
+include ../components/answers/answers
+include ../components/callback/callback
+include ../components/footer/footer
+
+block head
+    - var pageTitle = 'Index Page';
+
+block content
+  +header()
+  +masters()
+  +use()
+  +steps()
+  +answers()
+  +callback()
+  +footer()

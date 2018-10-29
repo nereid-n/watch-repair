@@ -1,0 +1,23 @@
+@import "vars"
+
+button
+  cursor: pointer
+
+.btn
+  position: relative
+  padding: 3px 30px 3px 5px
+  border: none
+  border-radius: 22px / 50%
+  overflow: hidden
+  transition: $transition
+  &-normal
+    padding: 15px 30px
+    color: #ffffff
+    font-size: 11px
+    text-transform: uppercase
+    font-weight: 800
+
+button.btn,
+a.btn
+  &:hover
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4)

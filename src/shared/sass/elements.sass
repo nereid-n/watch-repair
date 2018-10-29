@@ -1,0 +1,45 @@
+.phone-circle
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  height: 31px
+  width: 31px
+  border-radius: 50%
+  box-shadow: -3px 3px 15px rgba(0, 0, 0, 0.3)
+
+.title
+  &-main
+    text-transform: uppercase
+    font-size: 35px
+    font-weight: 800
+  &-small
+    display: inline-block
+    font-size: 17px
+    font-weight: 200
+
+.text-aside
+  position: absolute
+  display: flex
+  align-items: center
+  font-size: 11px
+  text-transform: uppercase
+  font-weight: 800
+  letter-spacing: 3px
+  transform: rotate(90deg)
+  transform-origin: 0 0
+  @media (max-width: 991px)
+    display: none
+  span
+    position: relative
+    display: flex
+    align-items: center
+    &:before
+      position: absolute
+      content: ""
+      left: -30px
+      width: 15px
+      border: 0.5px solid
+  &-phone
+    opacity: 0.3
+  img
+    margin-right: 45px
