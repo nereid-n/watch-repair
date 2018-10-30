@@ -8,6 +8,7 @@
     background-image: url('../images/header-bg.png')
     background-size: cover
     background-repeat: no-repeat
+    overflow: hidden
   &__img
     position: absolute
     bottom: 0
@@ -21,6 +22,10 @@
       display: none
   &__icon
     margin-right: 15px
+    @media (max-width: 767px)
+      width: 50px
+      display: flex
+      justify-content: center
   &__main
     position: relative
     width: 920px

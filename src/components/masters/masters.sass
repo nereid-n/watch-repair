@@ -1,2 +1,91 @@
+@import "../../shared/sass/vars"
+
 .masters
-	display: block
+  display: flex
+  align-items: center
+  @media (max-width: 1199px)
+    flex-direction: column
+  &-wrap
+    background-color: #dddddd
+    margin-bottom: -30px
+    @media (max-width: 1199px)
+      padding-top: 30px
+  &__text
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &-aside
+      top: 240px
+      left: 50px
+  &__slider
+    width: 620px
+    max-width: 100%
+    @media (max-width: 1199px)
+      margin-top: 50px
+    @media (max-width: 767px)
+      width: 70%
+    @media (max-width: 400px)
+      width: calc(100% - 10px)
+    .slick-list
+      padding-bottom: 30px
+    &-btn
+      position: absolute
+      z-index: 1
+      left: -30px
+      width: 50px
+      height: 50px
+      border: none
+      background-color: $dark
+      @media (max-width: 400px)
+        width: 40px
+        height: 40px
+        left: -10px
+    &-prev
+      bottom: 80px
+    &-next
+      bottom: 40px
+    &-img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &-link
+      font-size: 13px
+      color: inherit
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+    &-name
+      margin: 5px 0
+      font-size: 26px
+      font-weight: 800
+    &__content
+      position: absolute
+      z-index: 2
+      top: 0
+      left: 0
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      width: 100%
+      height: 100%
+      padding: 25px 40px
+    &-item
+      position: relative
+      color: #ffffff
+      &:after
+        position: absolute
+        content: ""
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: #b38439
+        opacity: 0.78
+        transition: $transition
+      &.slick-current
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4)
+        @media (max-width: 767px)
+          box-shadow: none
+        &:after
+          background-color: #6b6562
+          opacity: 0.5

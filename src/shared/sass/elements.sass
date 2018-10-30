@@ -19,6 +19,7 @@
 
 .text-aside
   position: absolute
+  z-index: 3
   display: flex
   align-items: center
   font-size: 11px
@@ -43,3 +44,13 @@
     opacity: 0.3
   img
     margin-right: 45px
+  &-small
+    font-size: 13px
+    font-weight: 500
+    letter-spacing: 0
+    text-transform: none
+    transform: rotate(-90deg) translateY(-100%)
+    span
+      &:before
+        left: calc(100% + 20px)
+        width: 22px

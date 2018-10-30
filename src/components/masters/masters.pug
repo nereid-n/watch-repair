@@ -1,3 +1,19 @@
 mixin masters()
-	+b.masters
-		block
+  section.masters-wrap
+    .container
+      +b.masters
+        +e.text
+          .col-12.pr0
+            h2.title-main работы выполняются мастерами
+          .col-lg-10
+            p.title-small.mt0 Которые прошли обучение в Швейцарии и имеют соответствующие сертификаты
+        +e.slider
+          -for (var i = 0; i < 5; i++)
+            +e.slider-item
+              +e('img').slider-img(src="assets/images/photo.png")
+              +e.text-aside.text-aside-small.text-aside
+                span Настройка наручных часов
+              +e.slider__content
+                span.fz13 15 лет опыта
+                +e('span').slider-name Валерий Вячеславович
+                +e('a').slider-link(href="#") Сертификат о прохождении <br> обучения

@@ -1,2 +1,51 @@
 .use
-	display: block
+  &-wrap
+    padding: 40px 0 60px
+    background-color: #ebebeb
+  &__items
+    display: flex
+    flex-wrap: wrap
+    margin-top: 5px
+  &__item
+    position: relative
+    width: 240px
+    height: 320px
+    margin-right: 5px
+    color: #ffffff
+    &:last-of-type
+      margin-right: 0
+    &:after
+      position: absolute
+      content: ""
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: #6b6562
+      opacity: 0.5
+    &-img
+      position: absolute
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &-title
+      font-size: 19px
+      font-weight: 800
+    &-content
+      position: relative
+      z-index: 3
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      height: 100%
+      padding: 20px 15px
+    &-text
+      height: 46px
+      margin-bottom: 0
+      font-size: 13px
+      line-height: 1.2em
+      overflow: hidden
+  &__text-aside
+    top: 175px
+    left: 25px
+    font-size: 9px
