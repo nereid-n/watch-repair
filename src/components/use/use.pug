@@ -3,7 +3,7 @@ mixin use()
     .container
       +b.use
         .row
-          .col-8
+          .col-xl-8
             .col-xl-6
               h2.title-main.mb0 Мы используем в работе
             .col-12
@@ -23,4 +23,19 @@ mixin use()
                   +e.item-content
                     +e('span').item-title Lorem ipsum dolor sit amet, consectetur
                     +e('p').item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-          .col-4
+          +e.company-wrap.col-xl-4
+            .mt30.mb10
+              p.title-small <span class="fw-extra-bold">Оригинальные запчасти, моющие составы <br> и масла</span> швейцарских производителей
+            .row.justify-content-center.mb15
+              -
+                var company = [
+                  'assets/images/company1.png',
+                  'assets/images/company2.png',
+                  'assets/images/company3.png',
+                  'assets/images/company4.png',
+                  'assets/images/company5.png',
+                  'assets/images/company6.png'
+                ]
+              each item in company
+                +e.company
+                  img(src= item)

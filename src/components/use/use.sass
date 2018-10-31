@@ -6,14 +6,15 @@
     display: flex
     flex-wrap: wrap
     margin-top: 5px
+    @media (max-width: 1199px)
+      justify-content: center
   &__item
     position: relative
-    width: 240px
+    width: 235px
     height: 320px
     margin-right: 5px
+    margin-bottom: 5px
     color: #ffffff
-    &:last-of-type
-      margin-right: 0
     &:after
       position: absolute
       content: ""
@@ -49,3 +50,17 @@
     top: 175px
     left: 25px
     font-size: 9px
+  &__company
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 160px
+    padding: 15px
+    &-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-end
+      padding-left: 0
+      @media (max-width: 1199px)
+        padding-left: 15px
