@@ -7,6 +7,7 @@
     <title>Index Page</title>
     <link href="assets/libs/slick/slick.css" rel="stylesheet">
     <link href="assets/libs/bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="assets/libs/video.js/video-js.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -163,130 +164,259 @@
     <section class="steps-wrap">
       <div class="container">
         <div class="steps">
-          <h2><span class="title-main">Каждый этап работ <br> прописан в смете</span><span class="title-small ml20">Репассаж (техническое обслуживание) механических <br> часов с системой автооооподзавода</span></h2>
-          <div class="steps__main">
-            <div class="steps__items">
-              <div class="steps__item">
-                <div class="steps__item-number"><span>1</span>
+          <h2 class="mb30"><span class="title-main">Каждый этап работ <br> прописан в смете</span><span class="title-small ml20">Репассаж (техническое обслуживание) механических <br> часов с системой автооооподзавода</span></h2>
+          <div class="steps__content">
+            <div class="steps__main">
+              <div class="steps__items">
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>1</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Часы приняты в ремонт </p>
+                  </div>
                 </div>
-                <div class="steps__item-text">
-                  <p>Часы приняты в ремонт </p>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>2</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Выемка механизма из корпуса</p>
+                  </div>
                 </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>2</span>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>3</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Мойка корпуса и браслета (при наличии) в ультразвуковой ванне</p>
+                  </div>
                 </div>
-                <div class="steps__item-text">
-                  <p>Выемка механизма из корпуса</p>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>4</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Разбор механизма </p>
+                  </div>
                 </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>3</span>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>5</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Дефектация узлов и деталей механизма (тщательный осмотр)</p>
+                  </div>
                 </div>
-                <div class="steps__item-text">
-                  <p>Мойка корпуса и браслета (при наличии) в ультразвуковой ванне</p>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>6</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Замена деталей (при выявлении неисправностей)</p>
+                  </div>
                 </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>4</span>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>7</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Мойка и сушка всех элементов механизма</p>
+                  </div>
                 </div>
-                <div class="steps__item-text">
-                  <p>Разбор механизма </p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>5</span>
-                </div>
-                <div class="steps__item-text">
-                  <p>Дефектация узлов и деталей механизма (тщательный осмотр)</p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>6</span>
-                </div>
-                <div class="steps__item-text">
-                  <p>Замена деталей (при выявлении неисправностей)</p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>7</span>
-                </div>
-                <div class="steps__item-text">
-                  <p>Мойка и сушка всех элементов механизма</p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>8</span>
-                </div>
-                <div class="steps__item-text">
-                  <p>Повторный осмотр узлов механизма</p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>9</span>
-                </div>
-                <div class="steps__item-text">
-                  <p>Сборка и смазка механизма </p>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>8</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Повторный осмотр узлов механизма</p>
+                  </div>
                 </div>
               </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>10</span>
+              <div class="steps__items">
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>9</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Сборка и смазка механизма </p>
+                  </div>
                 </div>
-                <div class="steps__item-text">
-                  <p>Проверка и регулировка рубинов</p>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>10</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Проверка и регулировка рубинов</p>
+                  </div>
                 </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>11</span>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>11</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Регулировка палет анкерной вилки</p>
+                  </div>
                 </div>
-                <div class="steps__item-text">
-                  <p>Регулировка палет анкерной вилки</p>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>12</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Регулировка точности хода</p>
+                  </div>
                 </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>12</span>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>13</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Установка циферблата и стрелок, установка механизма в корпус</p>
+                  </div>
                 </div>
-                <div class="steps__item-text">
-                  <p>Регулировка точности хода</p>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>14</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Смазка прокладок селиконом либо замена. Обеспечение герметичности</p>
+                  </div>
                 </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>13</span>
-                </div>
-                <div class="steps__item-text">
-                  <p>Установка циферблата и стрелок, установка механизма в корпус</p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>14</span>
-                </div>
-                <div class="steps__item-text">
-                  <p>Смазка прокладок селиконом либо замена. Обеспечение герметичности</p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__item-number"><span>15</span>
-                </div>
-                <div class="steps__item-text">
-                  <p>Циклотекст. Проверка механизма автоподзавода (не менее 3 суток)</p>
+                <div class="steps__item">
+                  <div class="steps__item-number"><span>15</span>
+                  </div>
+                  <div class="steps__item-text">
+                    <p>Циклотекст. Проверка механизма автоподзавода (не менее 3 суток)</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="steps__items">
+            <div class="steps__video"><span class="steps__video-text">рекомендуем видео к просмотру</span>
+              <video class="video-js" controls="controls" data-setup="{&quot;fluid&quot;: true}">
+                <source src="assets/images/video/post_video.mp4"/>
+              </video>
             </div>
-          </div>
-          <div class="steps__video">
           </div>
         </div>
       </div>
     </section>
-    <div class="answers">
-    </div>
-    <div class="callback">
-    </div>
+    <section class="answers-wrap">
+      <div class="container">
+        <div class="answers">
+          <div class="answers__text-aside text-aside"><span class="text-aside-phone">мы гарантируем качественную работу</span>
+          </div>
+          <h2><span class="d-flex flex-sm-row flex-column-reverse"><span class="title-main">Ответы на</span><span class="title-small ml20">Вы можете быть уверены, что получите полноценную <br>консультацию от ведущих специалистов</span></span><span class="title-main">ваши вопросы</span></h2>
+          <div class="answers__accordion accordion">
+            <div class="answers__accordion-item accordion-item">
+              <div class="accordion-item-top">
+                <div class="answers__accordion-item-top"><span class="answers__main-icon">?</span><span>Как заказать и оплатить услугу?<img class="answers__arrow-icon" src="assets/images/arrow-gold.png" alt="" role="presentation"/></span>
+                </div>
+              </div>
+              <div class="accordion-item-bottom">
+                <div class="answers__accordion-item-bottom">
+                  <div class="answers__list">
+                    <li>1. Отдайте часы на бесплатную диагностику</li>
+                    <li>2. Мы проведем диагностику, определим полный перечень и стоимость работ</li>
+                    <li>3. Вы получите квитанцию о приеме и только по завершению работ, внесете оплату</li>
+                    <li>4. Мы свяжемся с Вами по окончанию работ</li>
+                  </div><span class="header__callback-title">чтобы записаться на <span class='c-gold'>бесплатную диагностику</span> заполните форму</span>
+                  <div class="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
+                    <input class="header__input mt20" placeholder="Ваш телефон" type="text"/>
+                    <input class="header__input mt20" placeholder="Ваше имя" type="text"/>
+                    <button class="btn btn-normal bg-gradient mt20" type="submit">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="answers__accordion-item accordion-item">
+              <div class="accordion-item-top">
+                <div class="answers__accordion-item-top"><span class="answers__main-icon">?</span><span>Работаете с антиквариатом?<img class="answers__arrow-icon" src="assets/images/arrow-gold.png" alt="" role="presentation"/></span>
+                </div>
+              </div>
+              <div class="accordion-item-bottom">
+                <div class="answers__accordion-item-bottom">
+                  <div class="answers__list">
+                    <li>1. Отдайте часы на бесплатную диагностику</li>
+                    <li>2. Мы проведем диагностику, определим полный перечень и стоимость работ</li>
+                    <li>3. Вы получите квитанцию о приеме и только по завершению работ, внесете оплату</li>
+                    <li>4. Мы свяжемся с Вами по окончанию работ</li>
+                  </div><span class="header__callback-title">чтобы записаться на <span class='c-gold'>бесплатную диагностику</span> заполните форму</span>
+                  <div class="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
+                    <input class="header__input mt20" placeholder="Ваш телефон" type="text"/>
+                    <input class="header__input mt20" placeholder="Ваше имя" type="text"/>
+                    <button class="btn btn-normal bg-gradient mt20" type="submit">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="answers__accordion-item accordion-item">
+              <div class="accordion-item-top">
+                <div class="answers__accordion-item-top"><span class="answers__main-icon">?</span><span>Меняете ли Вы батарейки?<img class="answers__arrow-icon" src="assets/images/arrow-gold.png" alt="" role="presentation"/></span>
+                </div>
+              </div>
+              <div class="accordion-item-bottom">
+                <div class="answers__accordion-item-bottom">
+                  <div class="answers__list">
+                    <li>1. Отдайте часы на бесплатную диагностику</li>
+                    <li>2. Мы проведем диагностику, определим полный перечень и стоимость работ</li>
+                    <li>3. Вы получите квитанцию о приеме и только по завершению работ, внесете оплату</li>
+                    <li>4. Мы свяжемся с Вами по окончанию работ</li>
+                  </div><span class="header__callback-title">чтобы записаться на <span class='c-gold'>бесплатную диагностику</span> заполните форму</span>
+                  <div class="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
+                    <input class="header__input mt20" placeholder="Ваш телефон" type="text"/>
+                    <input class="header__input mt20" placeholder="Ваше имя" type="text"/>
+                    <button class="btn btn-normal bg-gradient mt20" type="submit">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="answers__accordion-item accordion-item">
+              <div class="accordion-item-top">
+                <div class="answers__accordion-item-top"><span class="answers__main-icon">?</span><span>Сколько стоит ремонт механизма (репассаж)?<img class="answers__arrow-icon" src="assets/images/arrow-gold.png" alt="" role="presentation"/></span>
+                </div>
+              </div>
+              <div class="accordion-item-bottom">
+                <div class="answers__accordion-item-bottom">
+                  <div class="answers__list">
+                    <li>1. Отдайте часы на бесплатную диагностику</li>
+                    <li>2. Мы проведем диагностику, определим полный перечень и стоимость работ</li>
+                    <li>3. Вы получите квитанцию о приеме и только по завершению работ, внесете оплату</li>
+                    <li>4. Мы свяжемся с Вами по окончанию работ</li>
+                  </div><span class="header__callback-title">чтобы записаться на <span class='c-gold'>бесплатную диагностику</span> заполните форму</span>
+                  <div class="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
+                    <input class="header__input mt20" placeholder="Ваш телефон" type="text"/>
+                    <input class="header__input mt20" placeholder="Ваше имя" type="text"/>
+                    <button class="btn btn-normal bg-gradient mt20" type="submit">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="answers__accordion-item accordion-item">
+              <div class="accordion-item-top">
+                <div class="answers__accordion-item-top"><span class="answers__main-icon">?</span><span>Вы делаете полировку?<img class="answers__arrow-icon" src="assets/images/arrow-gold.png" alt="" role="presentation"/></span>
+                </div>
+              </div>
+              <div class="accordion-item-bottom">
+                <div class="answers__accordion-item-bottom">
+                  <div class="answers__list">
+                    <li>1. Отдайте часы на бесплатную диагностику</li>
+                    <li>2. Мы проведем диагностику, определим полный перечень и стоимость работ</li>
+                    <li>3. Вы получите квитанцию о приеме и только по завершению работ, внесете оплату</li>
+                    <li>4. Мы свяжемся с Вами по окончанию работ</li>
+                  </div><span class="header__callback-title">чтобы записаться на <span class='c-gold'>бесплатную диагностику</span> заполните форму</span>
+                  <div class="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
+                    <input class="header__input mt20" placeholder="Ваш телефон" type="text"/>
+                    <input class="header__input mt20" placeholder="Ваше имя" type="text"/>
+                    <button class="btn btn-normal bg-gradient mt20" type="submit">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="callback-wrap">
+      <div class="container">
+        <div class="callback">
+          <div class="row justify-content-end">
+            <div class="col-xl-9">
+              <h2 class="title-main mb15">ОТДАЙТЕ ЧАСЫ на <br> <span class='c-gold'>бесплатную диагностику</span></h2><span class="title-small ml50 d-inline-block">Чтобы получить бесплатную диагностику, запоните форму. Часы <span class='fw-extra-bold'>можете привезти лично</span> или <span class='fw-extra-bold'>передать с помощью нашего курьера</span>. Стоимость выезда по Москве - от 500 руб.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="footer">
     </div>
     <script src="assets/libs/jquery-3.3.1.min.js"></script>
+    <script src="assets/libs/video.js/video.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>

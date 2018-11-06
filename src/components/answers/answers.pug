@@ -1,3 +1,40 @@
 mixin answers()
-	+b.answers
-		block
+  section.answers-wrap
+    .container
+      +b.answers
+        +e.text-aside.text-aside
+          span.text-aside-phone мы гарантируем качественную работу
+        h2
+          span.d-flex.flex-sm-row.flex-column-reverse
+            span.title-main Ответы на
+            span.title-small.ml20 Вы можете быть уверены, что получите полноценную <br>консультацию от ведущих специалистов
+          span.title-main ваши вопросы
+        +e.accordion.accordion
+          -
+            var items = [
+              'Как заказать и оплатить услугу?',
+              'Работаете с антиквариатом?',
+              'Меняете ли Вы батарейки?',
+              'Сколько стоит ремонт механизма (репассаж)?',
+              'Вы делаете полировку?'
+            ]
+          each item in items
+            +e.accordion-item.accordion-item
+              .accordion-item-top
+                +e.accordion-item-top
+                  +e('span').main-icon ?
+                  span= item
+                    +e('img').arrow-icon(src='assets/images/arrow-gold.png')
+              .accordion-item-bottom
+                +e.accordion-item-bottom
+                  +e.list
+                    li 1. Отдайте часы на бесплатную диагностику
+                    li 2. Мы проведем диагностику, определим полный перечень и стоимость работ
+                    li 3. Вы получите квитанцию о приеме и только по завершению работ, внесете оплату
+                    li 4. Мы свяжемся с Вами по окончанию работ
+
+                  span.header__callback-title чтобы записаться на <span class='c-gold'>бесплатную диагностику</span> заполните форму
+                  .d-flex.flex-wrap.justify-content-center.flex-column.flex-sm-row
+                    input.header__input.mt20(placeholder="Ваш телефон" type="text")
+                    input.header__input.mt20(placeholder="Ваше имя" type="text")
+                    button.btn.btn-normal.bg-gradient.mt20(type="submit") Оставить заявку

@@ -1,3 +1,5 @@
+@import "vars"
+
 .phone-circle
   display: inline-flex
   align-items: center
@@ -12,6 +14,7 @@
     text-transform: uppercase
     font-size: 35px
     font-weight: 800
+    line-height: 1.2
   &-small
     display: inline-block
     font-size: 17px
@@ -54,3 +57,41 @@
       &:before
         left: calc(100% + 20px)
         width: 22px
+
+.video-js
+  &:hover
+    .vjs-big-play-button
+      background-color: transparent
+  .vjs-big-play-button
+    left: 50%
+    top: 50%
+    height: 40px
+    background-color: transparent
+    background-image: url('../images/play-icon.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    border: none
+    transform: translate(-50%, -50%)
+    .vjs-icon-placeholder:before
+      display: none
+
+.vjs-paused
+  .vjs-big-play-button
+    display: block !important
+  .vjs-control-bar
+    display: none
+
+.accordion-item-bottom
+  max-height: 0
+  overflow: hidden
+  transition: all 0.4s ease-out
+
+.accordion-active
+  .accordion-item-bottom
+    max-height: 1000px
+    transition: all 0.4s ease-in
+
+.accordion-item-top
+  display: inline-block
+  cursor: pointer
