@@ -12,12 +12,25 @@ button
   transition: $transition
   &-normal
     padding: 11px 30px
-    color: #ffffff
     font-size: 11px
     text-transform: uppercase
     font-weight: 800
+    letter-spacing: 1.35px
+  &-big
+    padding: 13px 30px
+    font-size: 12px
+    text-transform: uppercase
+    font-weight: 800
+    letter-spacing: 1.35px
+  &.bg-gradient
+    color: #ffffff
 
 button.btn,
 a.btn
+  &:hover
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4)
+
+button.bg-gradient,
+a.bg-gradient
   &:hover
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4)

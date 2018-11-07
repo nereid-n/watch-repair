@@ -1,3 +1,12 @@
 mixin footer()
-	+b.footer
-		block
+  footer.footer-wrap
+    .container
+      +b.footer
+        .flex-grow-1.d-flex.justify-content-center.mb15
+          span Ремонт часов любых <br>марок в Москве
+        .d-flex.flex-wrap.justify-content-center
+          .mb15
+            +e('a').link-privacy(href='#') Политика конфидециальности
+          .d-flex.flex-column.mb15
+            span Copiright © 2015-2017
+            span.mt5 Premium service” Все права защищены

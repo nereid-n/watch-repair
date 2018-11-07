@@ -1,3 +1,37 @@
 mixin contacts()
-	+b.contacts
-		block
+  section.contacts-wrap
+    .container
+      +b.contacts
+        +e.main
+          div
+            .d-flex.align-items-center.flex-wrap
+              +e('button').btn.btn.bg-gradient.mb10
+                span.phone-circle.phone-circle-big.bg-white.float-left
+                  img(src="assets/images/phone2.png")
+                span.d-inline-flex.flex-column.align-items-start.ml10.mt8
+                  span.fw-extra-bold +7 (495) 777-77-77
+                  span.fz11 Получить консультацию
+              .d-flex.flex-column.fz10.fw-medium.ml10.mb10
+                span Время работы
+                span <span class='fw-extra-bold'>пн. - сб.</span>: 10:00 -20:00
+                span <span class='fw-extra-bold'>вс.</span>: 10:00 - 18:00
+            .d-flex.align-items-start.mt20
+              img.ml15(src='assets/images/address-icon.png')
+              .d-flex.flex-column.fz13.ml15
+                span м. Тверская, ул. Якорная, д. 28
+                span корп. 2, БЦ Якорь
+                span.fw-extra-bold +7 (495) 777-77-77
+            .d-flex.align-items-start.mt10
+              img.ml15(src='assets/images/address-icon.png')
+              .d-flex.flex-column.fz13.ml15
+                span м. Большевиков,
+                span ул. Красногвардейская 7/9
+                span.fw-extra-bold +7 (495) 777-77-77
+            .d-flex.align-items-center.mt30.ml10
+              span.fw-extra-bold Мы в соц. сетях:
+              a.phone-circle.phone-circle-big.bg-gradient.ml20(href='#')
+                img(src='assets/images/vk-icon.png')
+              a.phone-circle.phone-circle-big.bg-gradient.ml15(href='#')
+                img(src='assets/images/inst-icon.png')
+        +e.map
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.075751596328!2d37.53587111593077!3d55.75718628055452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bd81e7364cb%3A0x4e65af94b6eda943!2zMy3RjyDQmtGA0LDRgdC90L7Qs9Cy0LDRgNC00LXQudGB0LrQsNGPINGD0LsuLCA3LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTIzMzE3!5e0!3m2!1sru!2sua!4v1541576589358" frameborder="0" style="border:0" allowfullscreen></iframe>

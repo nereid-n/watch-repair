@@ -2,7 +2,13 @@ mixin callback()
   section.callback-wrap
     .container
       +b.callback
-        .row.justify-content-end
-          .col-xl-9
+        +e.text-aside.text-aside
+          span.text-aside-phone качество проверенное временем
+        .row
+          .col-xl-9.offset-xl-2
             h2.title-main.mb15 ОТДАЙТЕ ЧАСЫ на <br> <span class='c-gold'>бесплатную диагностику</span>
-            span.title-small.ml50.d-inline-block Чтобы получить бесплатную диагностику, запоните форму. Часы <span class='fw-extra-bold'>можете привезти лично</span> или <span class='fw-extra-bold'>передать с помощью нашего курьера</span>. Стоимость выезда по Москве - от 500 руб.
+            span.title-small.ml50.d-inline-block Чтобы получить бесплатную диагностику, запоните форму. Часы <span class='fw-extra-bold'>можете привезти <br> лично</span> или <span class='fw-extra-bold'>передать с помощью нашего курьера</span>. Стоимость выезда по Москве - от 500 руб.
+            .d-flex.flex-wrap.flex-column.flex-sm-row.mt10
+              input.input-big.header__input.mt20(placeholder="Ваш телефон" type="text")
+              input.input-big.header__input.mt20(placeholder="Ваше имя" type="text")
+              button.btn.btn-big.bg-gradient.mt20(type="submit") Оставить заявку
