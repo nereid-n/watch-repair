@@ -8,6 +8,8 @@
     margin-top: 5px
     @media (max-width: 1199px)
       justify-content: center
+    @media (max-width: 767px)
+      flex-direction: column
   &__item
     position: relative
     width: 235px
@@ -15,6 +17,10 @@
     margin-right: 5px
     margin-bottom: 5px
     color: #ffffff
+    @media (max-width: 991px)
+      width: calc((100% / 3) - 5px)
+    @media (max-width: 767px)
+      width: 100%
     &:after
       position: absolute
       content: ""
@@ -50,6 +56,8 @@
     top: 175px
     left: 25px
     font-size: 9px
+    @media (max-width: 991px)
+      display: flex
   &__company
     display: flex
     align-items: center
