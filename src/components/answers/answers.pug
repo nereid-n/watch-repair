@@ -24,10 +24,10 @@ mixin answers()
                 +e.accordion-item-top
                   +e('span').main-icon ?
                   span= item
-                    +e('img').arrow-icon(src='assets/images/arrow-gold.png')
+                    +e('img').arrow-icon(src='assets/images/arrow-gold.png' alt='')
               .accordion-item-bottom
                 +e.accordion-item-bottom
-                  +e.list
+                  +e('ul').list
                     li 1. Отдайте часы на бесплатную диагностику
                     li 2. Мы проведем диагностику, определим полный перечень и стоимость работ
                     li 3. Вы получите квитанцию о приеме и только по завершению работ, внесете оплату

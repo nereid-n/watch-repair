@@ -9,13 +9,13 @@ mixin header()
             span вс.: 10:00 - 18:00
           button.btn.bg-white.mt10.contacts__btn.mr30
             span.phone-circle.bg-gradient.float-left
-              img(src="assets/images/phone.png")
+              img(src="assets/images/phone.png" alt='')
             span.d-inline-flex.flex-column.align-items-start.mt5.ml5
               span.fz13.fw-extra-bold +7 (495) 777 777 77
               span.c-gray.fz11 ул. Краснаягвардейска 7/9
           .btn.pr0.mt10.lh1
             span.phone-circle.bg-gradient.float-left
-              img(src="assets/images/phone.png")
+              img(src="assets/images/phone.png" alt='')
             span.d-inline-flex.flex-column.align-items-start.mt5.ml5
               span.fz13.fw-extra-bold +7 (495) 777 777 77
               span.c-gray.fz11 ул. Косыгина, д 28, корп. 2, <br> БЦ Якорь
@@ -25,22 +25,22 @@ mixin header()
           span.title-small.ml20 От мастеров, которые прошли обучение в Швейцарии
         +e.main
           +e.text-aside-first.text-aside
-            img(src="assets/images/mouse-icon.png")
+            img(src="assets/images/mouse-icon.png" alt='')
             span.text-aside-phone узнать подробнее
           .d-flex.flex-wrap.fz13.col
             .col-lg-4.mb15
               +e.icon.float-left
-                img(src="assets/images/head-icon1.png")
+                img(src="assets/images/head-icon1.png" alt='')
               .mt5
                 span.mt5 Оплата картой, картой рассрочки “Халва” или наличными
             .col-lg-4.mb15
               +e.icon.float-left
-                img(src="assets/images/head-icon2.png")
+                img(src="assets/images/head-icon2.png" alt='')
               .mt5
                 span Бесплатная мойка корпуса или замена батарейки
             .col-lg-4.mb15
               +e.icon.float-left
-                img(src="assets/images/head-icon3.png")
+                img(src="assets/images/head-icon3.png" alt='')
               .mt5
                 span Удобное расположение в 5-ти минутах хотьбы от метро
           +e('form').callback
@@ -50,6 +50,6 @@ mixin header()
               +e('input').input.mt10(placeholder="Ваш телефон")
               +e('input').input.mt10(placeholder="Ваше имя")
               button(type="submit").btn.btn-normal.bg-gradient.mt10 Оставить заявку
-        +e('img').img(src="assets/images/Rolex-PNG-High-Quality-Image.png")
+        +e('img').img(src="assets/images/Rolex-PNG-High-Quality-Image.png" alt='')
         +e.text-aside-second.text-aside
           span.text-aside-phone качество проверенное временем

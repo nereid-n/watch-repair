@@ -17,7 +17,7 @@ mixin use()
                 ]
               each item in itemImg
                 +e.item
-                  +e('img').item-img(src=item)
+                  +e('img').item-img(src=item alt='')
                   +e.text-aside.text-aside-small.text-aside
                     span Настройка наручных часов
                   +e.item-content
@@ -38,4 +38,4 @@ mixin use()
                 ]
               each item in company
                 +e.company
-                  img(src= item)
+                  img(src= item alt='')
